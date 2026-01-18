@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .options {
+        margin: 150px;
+        padding: 55px;
+        height: 12vh;
+        width: 12vw;
+        border: 2px solid rgb(47, 47, 47);
+        border-color: rgb(60, 59, 59);
+        margin-left: 25em;
+        align-items: center;
+        border-radius: 3px;
+    }
+
+    .inside {
+        margin-left: -49px;
+        margin-top: -20px;
+    }
+
+    .options label {
+        gap: 15px;
+        font-size: 13px;
+        height: 6px;
+        width: 6px;
+    }
+
+    .inside input[type="radio"] {
+        margin-left: 210px;
+        height: 8px;
+        width: 8px;
+    }
+
+    .options:label:hover::after {
+        border: 3px solid grey;
+        border-color: black;
+        transform: scale(1.05);
+    }
+
+    .hi:hover::after {
+        border: 3px solid grey;
+        border-color: black;
+        transform: scale(1.05);
+        height: 5px;
+        width: 6px;
+
+    }
+</style>
+
+<body>
+    <div class="options">
+        <div class="inside">
+            <label class="hi">
+                Gpay<input type="radio" name="payment">
+            </label>
+            <br>
+            <label>
+                Credit card<input type="radio" name="payment">
+            </label>
+            <br>
+            <label>
+                Banking<input type="radio" name="payment">
+            </label>
+        </div>
+    </div>
+</body>
+
+</html>

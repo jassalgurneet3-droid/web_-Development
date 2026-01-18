@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: #222;
+        margin: 96px;
+    }
+
+    input {
+        text-transform: capitalize;
+        display: flex;
+        margin-top: 50px;
+        margin-left: 55px;
+        font-size: 1.6em;
+    }
+
+    select {
+        text-transform: capitalize;
+        display: flex;
+        margin-top: 50px;
+        margin-left: 55px;
+        font-size: 1.6em;
+    }
+
+    .active {
+        display: none;
+        margin-left: 55px;
+        color: rgb(205, 16, 16);
+        font-size: 1.5em;
+    }
+    .mail{
+        display: none;
+        margin-left: 55px;
+        color: rgb(205, 16, 16);
+        font-size: 1.5em;
+    }
+    .sec{
+        display: none;
+        margin-left: 55px;
+        color: rgb(205, 16, 16);
+        font-size: 1.5em;
+    }
+   
+</style>
+
+<body>
+
+    <form>
+        
+        <input id="yoo" type="text" placeholder="name">
+        
+        <div class="active">
+            <br>
+            <span> Your name should be greater than 2 Characters</span>
+        </div>
+
+        
+        <input id="mla" type="email" placeholder="E-Mail">
+        
+        <div class="mail">
+            <br>
+            <span>Follow Email format !!</span>
+        </div>
+        
+
+        <input id="psw" type="password" placeholder="password">
+
+        <div class="sec">
+            <br>
+            <span>Password Write is not Accurate !!</span>
+        </div>
+
+        <select>
+            <option value selected disabled="select">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- <h1>Max length left = <span>20</span></h1>
+        <input type="text" placeholder="Enter anyhing :  "> -->
+
+    <script src="new.js"></script>
+</body>
+
+</html>

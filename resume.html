@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #636464;
+    }
+
+    .frm {
+        box-shadow: 6px 4px 10px #4f5960(0, 0, 0, 0.2);
+        margin: 55px;
+        height: 55rem;
+        width: 51rem;
+        border: 4.5px solid #535455;
+        margin-bottom: 20%;
+    }
+
+    .hi {
+        height: 100%;
+        background-color: rgb(202, 206, 206);
+    }
+
+    h1 {
+        margin-top: 0px;
+        height: 7%;
+        width: 100%;
+        font-size: 2.3em;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(74, 79, 81);
+
+    }
+
+    input {
+        margin-bottom: 5%;
+        margin-top: 2%;
+        margin-left: 3%;
+        height: 4%;
+        border-radius: 12px;
+        border: 1.75px solid rgb(111, 112, 112);
+        width: 90%;
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    label {
+        margin-top: 20%;
+        font-size: 1.35em;
+        margin-left: 3%;
+        font-weight: 550;
+        color: #373738;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .lower {
+        display: flex;
+    }
+
+    .lower label {
+        display: flex;
+        margin-top: 16px;
+        font-size: 1.3em;
+    }
+
+    .lower input {
+        margin-bottom: 4%;
+        margin-top: 2%;
+        margin-left: 3%;
+        height: 1%;
+        border-radius: 12px;
+        border: 1.75px solid rgb(111, 112, 112);
+        width: 20%;
+        font-size: 1.3em;
+        text-align: left;
+    }
+
+    textarea {
+
+        margin-bottom: 4%;
+        margin-top: 2%;
+        margin-left: 3%;
+        height: 7%;
+        border-radius: 12px;
+        border: 1.75px solid rgb(111, 112, 112);
+        width: 90%;
+        font-size: 1.3em;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        color: #4f4f50;
+
+    }
+
+    .submit button {
+        margin-left: 286px;
+        text-align: center;
+        height: 2em;
+        width: 19%;
+    }
+
+    .submit button:hover {
+        background-color: #4f4f50;
+        color: aliceblue;
+        cursor: pointer;
+    }
+
+
+
+    .res_shown {
+        box-sizing: border-box;
+        background-color: rgb(240, 240, 240);
+        margin-top: -55px;
+        height: 75rem;
+        margin-left: 65px;
+        width: 51rem;
+
+        
+    }
+    
+
+    .image img {
+        text-align: center;
+        margin-top: 56px;
+        margin-left: 255px;
+        height: 15rem;
+        width: 20rem;
+        border-radius: 100%;
+        background-color: rgb(93, 88, 81);
+        padding: 5px;
+        margin-bottom: 25px;
+    }
+
+    .h2 {
+        text-transform: capitalize;
+        text-decoration: underline;
+        padding: 20px;
+        margin-top: 0px;
+        height: 7%;
+        margin-bottom: 6px;
+        width: 100%;
+        text-align: center;
+        font-size: 2.3em;
+        color: rgb(74, 79, 81);
+        font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+
+    .email {
+        text-transform: capitalize;
+        margin-top: 0px;
+        height: 6%;
+        width: 100%;
+        font-size: 2.3em;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: rgb(76, 77, 77);
+        text-decoration: underline;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .address {
+        text-transform: capitalize;
+        margin-bottom: 60px;
+        margin-left: 65px;
+        word-break: break-word;
+        font-size: 1.7em;
+    }
+
+    .phone {
+        text-transform: capitalize;
+        height: 6%;
+        width: 35%;
+        border-radius: 35px;
+        background-color: rgb(74, 79, 81);
+        margin-top: 95px;
+        font-size: 2em;
+        margin-left: 65px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    .occupation {
+        text-transform: capitalize;
+        height: 6%;
+        width: 40%;
+        border-radius: 35px;
+        background-color: rgb(119, 124, 126);
+
+        font-size: 2em;
+        margin-left: 455px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    .about-us {
+        text-transform: capitalize;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 55px;
+        font-size: 1.55em;
+        word-break: break-word;
+    }
+</style>
+
+<body>
+    <div class="main">
+
+        <div class="frm">
+            <form class="hi">
+                <h1>Resume Details</h1>
+
+                <label for="profilePic">Profile Picture (Image URL)</label>
+                <input type="text" placeholder="Paste image URL">
+
+                <label for="fullname">Full Name</label>
+                <input type="text" placeholder="Enter Your Full Name">
+
+                <label for="Address">Address</label>
+                <input type="text" placeholder="Enter Your Address">
+
+                <label for="Email">Email</label>
+                <input type="text" placeholder="Enter Your email">
+
+                <div class="lower">
+                    <label for="phone">Phone Number</label>
+
+                    <input type="text" placeholder="Phone No.">
+
+
+                    <label for="phone">Profession</label>
+                    <br>
+                    <input type="text" placeholder="Occupation">
+
+
+                </div>
+
+                <label for="about youself">About Yourself</label>
+                <textarea name="info" id="about us" placeholder="Write a short Description"></textarea>
+
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+
+
+
+        <!-- Resume shown !! -->
+
+        <!-- <div class="res_shown">
+
+            <div class="image">
+                <img
+                    src="data:image/jpeg;base64,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">
+            </div>
+
+            <div class="h2">
+                <h3>Gurneet singh</h3>
+
+            </div>
+
+
+            <div class="address">
+                <p>B-34, 6043, street no.7, luxmi nagar, haibowal kalan, ludhiana, jassian road near Gandhi book store.
+                </p>
+            </div>
+
+            <div class="email">
+                <h5>jassalgurneet3@gmail.com</h5>
+            </div>
+
+            <div class="phone">
+                9877033088
+            </div>
+
+            <div class="occupation">
+                Web Developer
+            </div>
+
+            <div class="about-us">
+                <p>I am a passionate web development learner with a strong interest in building responsive and
+                    user-friendly websites. I enjoy working with HTML, CSS, and JavaScript to create clean designs and
+                    interactive web experiences. I am continuously improving my skills and eager to learn modern
+                    frameworks and best practices in web development.</p>
+            </div>
+        </div>
+
+    </div> -->
+        <script src="resume.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 25px;
+        padding: 28px;
+        background-color: #191818;
+    }
+
+
+    input {
+        display: flex;
+        margin: 15px;
+        font-size: 1.25rem;
+    }
+
+    .button {
+        height: 15px;
+        width: 9px;
+    }
+
+    .card {
+        border-radius: 13px;
+        border: 1.5px solid rgb(11, 11, 11);
+        margin: 55px;
+        padding: 20px;
+        width: 280px;
+        background-color: rgb(62, 63, 63);
+        word-break: break-word;
+    }
+
+
+    .profile {
+        
+        height: 85px;
+        width: 83px;
+        background-color: rgb(21, 21, 21);
+        border-radius: 42px;
+        object-fit: cover;
+        margin-bottom: 12px;
+    }
+
+    .profile img {
+        border-radius: 42px;
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+        margin-bottom: 12px;
+    }
+
+    .name {
+        font-size: 1.25em;
+        color: white;
+        margin-bottom: 12px;
+        text-transform: capitalize;
+    }
+
+    .occupation {
+        font-size: 1.25em;
+        color: white;
+        margin-bottom: 12px;
+        text-transform:  capitalize;
+    }
+
+    .about {
+        font-size: 1.25em;
+        color: white;
+        margin-bottom: 12px;
+        text-transform: capitalize;
+
+    }
+</style>
+
+<body>
+
+    <form>
+        <input type="text" placeholder="Profile pic">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Occupation">
+        <input type="text" placeholder="About US">
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <!-- <div class="main"> -->
+
+        <!-- <div class="card">
+
+            <div class="profile">
+                <img
+                    src="data:image/jpeg;base64,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">
+            </div>
+
+            <div class="name">
+                <h2>John William</h2>
+            </div>
+
+            <div class="occupation">
+                <h3>Influencer of Marketing</h3>
+            </div>
+
+            <div class="about">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis in, fugit blanditiis, a natus
+                    sentiu fuga sed. Commodi delectus quasi accusantium!</p>
+            </div> -->
+        <!-- </div> -->
+
+        <script src="profile.js"></script>
+</body>
+
+</html>
